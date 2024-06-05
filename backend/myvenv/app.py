@@ -2,7 +2,7 @@ import io
 from flask import request, send_file, jsonify # type: ignore
 from botocore.exceptions import NoCredentialsError
 from .models import User
-from . import app, s3,S3_BUCKET_NAME
+from . import app, s3, S3_BUCKET_NAME
 
 
 @app.route("/upload_track", methods=["GET,","POST"])
